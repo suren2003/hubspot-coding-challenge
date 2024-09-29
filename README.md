@@ -2,13 +2,8 @@
 
 This project processes call records for customers, calculates the maximum number of concurrent calls for each customer on a given day, and posts the results to a specified API.
 
-## Table of Contents
+This was my hubspot coding challenge. The code is not as optimized, organized, commented as it could be.
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Dependencies](#dependencies)
-- [API Reference](#api-reference)
-- [License](#license)
 
 ## Installation
 
@@ -17,7 +12,8 @@ To set up the project, clone this repository and install the required dependenci
 ```bash
 git clone <repository-url>
 cd <repository-directory>
-pip install -r requirements.txt
+pip3 install requirements
+pip3 install pytz
 ```
 
 ## Usage
@@ -25,10 +21,11 @@ pip install -r requirements.txt
 1. Run the script to fetch call records from the API, process the data, and post the results:
    
    ```bash
-   python call_analysis.py
+   python process.py
    ```
 
 2. Ensure that you have the necessary permissions and a valid user key to access the API.
+3. You can also provide your own test data and have it be printed out, without the need for API access to GET and POST data.
 
 ## Dependencies
 
@@ -36,12 +33,6 @@ The project requires the following Python packages:
 
 - `requests`: For making HTTP requests.
 - `pytz`: For timezone handling.
-
-You can install these dependencies using:
-
-```bash
-pip install -r requirements.txt
-```
 
 ## API Reference
 
