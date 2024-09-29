@@ -21,7 +21,7 @@ pip3 install pytz
 1. Run the script to fetch call records from the API, process the data, and post the results:
    
    ```bash
-   python process.py
+   python call_analyzer.py
    ```
 
 2. Ensure that you have the necessary permissions and a valid user key to access the API.
